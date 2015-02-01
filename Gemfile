@@ -5,13 +5,13 @@ ruby "2.2.0"
 
 gem 'rails', '4.2.0'
 gem 'pg'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'bcrypt', '~> 3.1.7'
+gem 'jbuilder'
+gem 'bcrypt'
 gem 'unicorn'
 gem "rack-timeout"
 gem "recipient_interceptor"
@@ -21,8 +21,10 @@ gem "haml-rails"
 gem 'devise'
 gem 'friendly_id'
 gem 'bootstrap-sass'
+gem 'bootstrap-generators'
 gem 'autoprefixer-rails'
 gem 'newrelic_rpm'
+gem 'figaro'
 
 # source 'https://rails-assets.org' do
 #   gem 'rails-assets-angular'
@@ -31,7 +33,7 @@ gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
   gem "awesome_print"
 end
 
@@ -41,7 +43,7 @@ group :development do
 end
 
 group :test do
-  gem "capybara-webkit", ">= 1.2.0"
+  gem "capybara-webkit"
   gem "database_cleaner"
   gem "factory_girl_rails"
   gem "rspec-rails"
