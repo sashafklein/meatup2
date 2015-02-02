@@ -86,6 +86,7 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.4)
     diff-lcs (1.2.5)
     dotenv (1.0.2)
     erubis (2.7.0)
@@ -269,6 +270,7 @@ DEPENDENCIES
   coffee-rails
   database_cleaner
   devise
+  devise-bootstrap-views
   factory_girl_rails
   figaro
   font-awesome-sass

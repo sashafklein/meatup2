@@ -1,0 +1,15 @@
+.container
+  .jumbotron
+    %h2 Animals on Sale
+    %table.table
+      %tr
+        %th Name
+        %th Weight
+        %th Breed
+        %th Feed
+      - @animals.each do |animal|
+        %tr
+          %td= link_to animal.name, animal
+          %td= animal.live
+          %td= animal.breed
+          %td= animal.feed

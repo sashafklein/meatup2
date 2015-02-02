@@ -25,6 +25,7 @@ gem 'bootstrap-generators'
 gem 'autoprefixer-rails'
 gem 'newrelic_rpm'
 gem 'figaro'
+gem 'devise-bootstrap-views'
 
 # source 'https://rails-assets.org' do
 #   gem 'rails-assets-angular'
