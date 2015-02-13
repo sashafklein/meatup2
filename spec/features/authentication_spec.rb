@@ -6,8 +6,9 @@ describe 'Authentication' do
     it "is linked to on the landing page" do
       user = User.create(email: 'blah@email.com', password: 'password')
       visit root_path
-      save_and_open_page
-      expect( page ).to have_content 'LOG IN' # On sign-in page
+      
+      expect( page ).to have_content 'Sign in' # On sign-in page
+      
       fill_in 'Email', with: user.email
       fill_in "Password", with: user.password
       click_button 'Sign in'
@@ -24,6 +25,7 @@ describe 'Authentication' do
       fill_in 'Email', with: 'myfake@email.com'
       fill_in 'Password', with: 'password'
       fill_in 'Password confirmation', with: 'password'
+
       fill_in 'First name', with: 'John'
       fill_in 'Last name', with: 'Doe'
       click_button "Sign up"

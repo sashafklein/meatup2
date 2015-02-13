@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'animals#index'
+  
+  root 'landings#show'
   resources :animals
   resources :users
 

@@ -49,6 +49,7 @@ group :test do
   gem "factory_girl_rails"
   gem "rspec-rails"
   gem "selenium-webdriver"
+  gem 'launchy'
 end
 
 group :staging, :production do
